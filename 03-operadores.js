@@ -26,13 +26,39 @@ c %= 2; // c = c % 2
 console.log(c); // Imprime 1 (20 + 5 - 2 = 23, 23 * 3 = 69, 69 / 4 = 17.25, 17.25 % 2 = 1.25)
 
 //Operadores de Comparación
-console.log(10 > 5); // Mayor que
-console.log(10 < 5); // Menor que
-console.log(10 >= 5); // Mayor o igual que
-console.log(10 <= 5); // Menor o igual que
-console.log(10 == 5); // Igualdad
-console.log(10 != 5); // Desigualdad
+let d = 5;
+let e = 8;
+console.log(d > e);
+console.log(d < e);
+console.log(d >= e);
+console.log(d <= e);
+console.log(d == e); // Igualdad por valor
+console.log(d == "e"); // Igualdad por valor (d es 5, "e" es 8)
 
 // Operadores de Comparación Estricta
-console.log(10 === 10); // Igualdad estricta
-console.log(10 !== 5); // Desigualdad estricta
+console.log(d === e);
+console.log(d !== e);
+
+// Operadores Lógicos
+
+// and (&&)
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+
+// or (||)
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
+
+// not (!) Da sentido contrario a un valor booleano - invierte el valor
+console.log(!true); // false
+console.log(!false); // true
+
+/* Operadores ternarios: ? y :
+Si se cumple, se ejecuta la primera expresión (?), si no, la segunda (:)*/
+let edad = 17;
+let esMayor = (edad >= 18) ? "Es mayor de edad" : "Es menor de edad";
+console.log(esMayor);
